@@ -26,3 +26,4 @@ E:\MyLearnings\Works\.net\HeyChat\API\obj\Debug\net9.0\refint\API.dll
 E:\MyLearnings\Works\.net\HeyChat\API\obj\Debug\net9.0\API.pdb
 E:\MyLearnings\Works\.net\HeyChat\API\obj\Debug\net9.0\API.genruntimeconfig.cache
 E:\MyLearnings\Works\.net\HeyChat\API\obj\Debug\net9.0\ref\API.dll
+E:\MyLearnings\Works\.net\HeyChat\API\obj\Debug\net9.0\API.sourcelink.json
