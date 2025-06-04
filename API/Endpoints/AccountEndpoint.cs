@@ -16,7 +16,8 @@ public static class AccountEndpoint
       HttpContext context, UserManager<AppUser> userManager,
       [FromForm] string fullName,
       [FromForm] string email,
-      [FromForm] string password) =>
+      [FromForm] string password,
+      [FromForm] string userName) =>
     {
       var userFormDb = await userManager.FindByNameAsync(email);
 
@@ -30,6 +31,7 @@ public static class AccountEndpoint
       {
         Email = email,
         FullName = fullName,
+        UserName = userName,
       };
 
       var result = await userManager.CreateAsync(user, password);
@@ -40,7 +42,7 @@ public static class AccountEndpoint
       }
 
       return Results.Ok(Response<string>.Success("", "User created successfully"));
-    });
+    }).DisableAntiforgery();
 
     return group;
   }
