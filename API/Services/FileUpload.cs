@@ -10,7 +10,7 @@ public class FileUpload
 
     if (!Directory.Exists(uploadFolder))
     {
-      Directory.SetCurrentDirectory(uploadFolder);
+      Directory.CreateDirectory(uploadFolder);
     }
 
     var fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
